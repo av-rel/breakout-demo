@@ -2,4 +2,4 @@
 
 ## Breakout with no level
 
-![Demo]("./demo.png")
+![Demo](./demo.png)
