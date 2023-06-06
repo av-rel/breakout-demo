@@ -19,11 +19,11 @@ main :: proc () {
 	defer sdl.DestroyWindow(game.state.win);
 	defer sdl.DestroyRenderer(game.state.ren);
 
+	game.reset();
 	for game.state.active {
 		last := sdl.GetTicks();
 		game.render();
 		game.update(game.state.dt)
 		game.state.dt = 1.0/f32(sdl.GetTicks() - last);
 	}
-
 }
